@@ -1,0 +1,229 @@
+
+#app{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+
+#header{
+  background-color: rgba(51, 33, 214, 0.815);
+  padding:0px;
+  position: relative;
+  padding: 10px;
+  left: 0;
+  right: 0;
+ 
+  
+}
+
+#header h2{
+  display: inline;
+  padding: 0px;
+  margin: 0px ;
+  color: white;
+  position: relative;
+  left: 43%;
+  transform: translateX(-50%);
+ 
+}
+
+
+#header button{
+ 
+  background-color: rgba(128, 128, 233, 0.767);
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: white;
+  right:15%;
+  box-shadow: 1px 1px 2px gray ;
+  cursor: pointer;
+  
+}
+
+@media(max-width:500px){
+
+#header button{
+  position: absolute;
+  right:2%;
+}
+
+#header h2{
+
+ 
+  position: relative;
+  left: 39%;
+  transform: translateX(-50%);
+}
+
+}
+
+#form-div{
+  width:70%;
+  margin: 20px auto ;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 2px gray ;
+  padding: 15px 5px;
+  
+  
+}
+
+
+@media(max-width:600px){
+
+#form-div{
+  width:90%;
+  
+}
+
+}
+
+#input-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+#form-title{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.col{
+  display:flex;
+  flex-direction: column-reverse; 
+  
+  width:49.5%;
+  box-sizing: border-box;
+
+
+}
+
+
+
+.col input{
+ height: 35px;
+ border: none;
+ border-bottom: 2px solid gray;
+ outline: none;
+}
+
+.col input:focus{
+  border-bottom: 2px solid blue;
+}
+
+.col input:focus + label {
+  color: blue ;
+}
+
+#btn-flex{
+  
+  margin: 15px 0;
+ 
+  
+}
+
+
+
+#update-delete-back{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  
+  
+  justify-content: space-between;
+}
+
+#add,#back,#update,#delete{
+  height: 30px;
+  width: 100px;
+  padding: 5px;
+  margin-right: 2px;
+  background-color: rgb(81, 81, 214);
+  box-shadow: 1px 1px 2px gray ;
+  border: 0;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+
+#back{
+  background-color: gray;
+}
+
+#update{
+  background-color: orange;
+  width: 130px;
+  margin-right: 5px;
+}
+
+#delete{
+  background-color: orangered;
+  width: 130px;
+
+}
+
+#section2{
+  width:70%;
+  margin: 10px auto ;
+ ;
+}
+
+
+#section2 h1{
+  text-align: center;
+
+  margin-top: 0;
+}
+
+#unordered-list{
+  list-style-type: none;
+  
+  padding: 0;
+}
+
+
+#unordered-list li{
+  
+  border: 0.5px solid grey;
+  padding: 5px 5px;
+  
+}
+
+#unordered-list li #icon{
+  float: right;
+  cursor: pointer;
+}
+
+#errorStatus{
+
+  display: flex;
+  justify-content: center;
+  
+  height:30px;
+
+
+}
+
+#successful{
+  
+  color: rgb(28, 211, 28);
+  font-weight: bold;
+  font-style: italic;
+}
+
+#error{
+ 
+  color: rgb(245, 14, 14);
+  font-weight: bold;
+  font-style: italic;
+}
+
+#error-div, #loading-div{
+  text-align: center;
+  font-weight: bold;
+
+}
